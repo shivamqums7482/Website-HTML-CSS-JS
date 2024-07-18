@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEO Thoughts</title>
+    <link rel="stylesheet" href="thoughtsStyle.css">
+</head>
+<body>
+    <div class="content">
+        <button class="language-button" onclick="toggleLanguage()"><div class="hindi">हिन्दी</div> </button>
+        <h1 class="heading" id="heading">CEO Thoughts</h1>
+        <hr class="color-changing-line">
+        <div class="chakra">
+            <img src="om.png" alt="om" class="chakri">
+        </div>
+       <a href="home.html" class="logo">
+        <img src="SanatanBoard.jpg" alt="img" class="logo-img">
+       </a>
+  
+        <ul class="identity-list" id="identity-list">
+            <li> <span class="yoga">● Yoga:</span>  A union of body, mind, and soul, unfolding inner strength, grace, and wisdom, and can solve all the problems of your life, Yoga is Kalpavriksha in itself.
+                 </li>
+            <li> <span class="organic">● Organic Farming:</span> We believe that organic farming is the only future to save our future generation</li>
+            <li> <span class="rain">● Rain Water Harvesting:</span> A drop of wisdom for a drought-free, water-secure tomorrow and to irrigate a greener future</li>
+            <li> <span class="tree">● Tree Plantation:</span> A noble act of sowing a legacy of shade, shelter, and sustenance for generations to come, a greener tomorrow, and a legacy forever.
+            </li>
+        </ul>
+    </div>
+
+   
+    
+    <script>
+        let isEnglish = true;
+
+        function toggleLanguage() {
+            if (isEnglish) {
+                changeToHindi();
+            } else {
+                changeToEnglish();
+            }
+            isEnglish = !isEnglish;
+        }
+
+        function changeToHindi() {
+            document.getElementById('heading').innerText = 'मुख्य कार्यकारी अधिकारी के विचार';
+            document.getElementById('identity-list').innerHTML = `
+                <li>  योग: शरीर, मन और आत्मा का मिलन, आंतरिक शक्ति, अनुग्रह और ज्ञान को प्रकट करता है, और आपके जीवन की सभी समस्याओं को हल कर सकता है, योग अपने आप में कल्पवृक्ष है। 
+ </li>
+                <li> जैविक खेती: हमारा मानना ​​है कि हमारी भावी पीढ़ी को बचाने के लिए जैविक खेती ही एकमात्र भविष्य है। </li>
+                <li> वर्षा जल संचयन: सूखा-मुक्त, जल-सुरक्षित कल और हरित भविष्य को सिंचित करने के लिए ज्ञान की एक बूंद। </li>
+                <li> वृक्षारोपण: आने वाली पीढ़ियों के लिए छाया, आश्रय और जीविका की विरासत, एक हरा-भरा कल और हमेशा के लिए एक विरासत बोने का एक नेक कार्य।</li>
+                
+            `;
+        }
+
+        function changeToEnglish() {
+            document.getElementById('heading').innerText = 'CEO Thoughts';
+            document.getElementById('identity-list').innerHTML = `
+         <li> <span class="yoga">● Yoga:</span>  A union of body, mind, and soul, unfolding inner strength, grace, and wisdom, and can solve all the problems of your life, Yoga is Kalpavriksha in itself.
+                 </li>
+            <li> <span class="organic">● Organic Farming:</span> We believe that organic farming is the only future to save our future generation</li>
+            <li> <span class="rain">● Rain Water Harvesting:</span> A drop of wisdom for a drought-free, water-secure tomorrow and to irrigate a greener future</li>
+            <li> <span class="tree">● Tree Plantation:</span> A noble act of sowing a legacy of shade, shelter, and sustenance for generations to come, a greener tomorrow, and a legacy forever.
+            </li>
+            `;
+        }
+    </script>
+</body>
+</html>

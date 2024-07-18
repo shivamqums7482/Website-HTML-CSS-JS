@@ -1,0 +1,178 @@
+body {
+    background-color: black;
+    color: green;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.heading {
+    font-size: 4em;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    animation: color-change 3s infinite;
+    font-family: cursive;
+}
+
+.color-changing-line {
+    width: 80%;
+    border: none;
+    height: 3px;
+    background: orange;
+    animation: color-change 3s infinite;
+    margin-bottom: 20px;
+}
+
+.chakra {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.chakri {
+    width: 180px; 
+    height: auto;
+    animation: rotate 4s linear infinite;
+}
+
+.ceo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.rana {
+    width: 250px; 
+    height: 200px;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+.identity-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.5em;
+    color: white;
+    font-family: cursive;
+}
+
+.identity-list li {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.identity-list li::before {
+    content: '●';
+    color: orange;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.identity-list a {
+    color: orange;
+    text-decoration: none;
+}
+
+.identity-list a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.logo-img {
+    width: 200px;
+    height: auto;
+}
+
+@keyframes color-change {
+    0% { color: orange; }
+    33% { color: white; }
+    66% { color: green; }
+    100% { color: orange; }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.identity-list a{
+    color: orange;
+}
+
+.identity-list a:hover{
+    color: orangered;
+    transition: 0.8s;
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2.0em;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 40px;
+
+    }
+
+    .chakra {
+        margin-bottom: 20px;
+        margin-left: -5px;
+    }
+
+    .chakri{
+        width: 65px;
+        margin-top: 0px;
+    }
+
+    .ceo-section {
+        flex-direction: column;
+    }
+
+    .rana {
+        width: 25%; 
+        height: auto;
+        margin-right: 200px; 
+        margin-bottom: 0px;
+        margin-top: 30px;
+    }
+
+    .logo {
+        margin-top: 20px;
+    }
+
+    .logo-img {
+        width: 85px; 
+        height: auto;
+        margin-top: -25px;
+        margin-right: -25px;
+    }
+
+    .color-changing-line{
+        height: 2px;
+        margin-top: -10px;
+    }
+
+    .identity-list{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 12px;
+        margin-top: -40px;
+        margin-right: -50px;
+    }
+}

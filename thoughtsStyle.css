@@ -1,0 +1,188 @@
+body {
+    background-color:black;
+    color: green;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.heading {
+    font-size: 4em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    animation: color-change 3s infinite;
+    font-family: cursive;
+}
+
+
+
+.color-changing-line {
+    width: 80%;
+    border: none;
+    height: 4px;
+    background: orange;
+    animation: color-change 3s infinite;
+    margin-bottom: 20px;
+}
+
+
+.chakra {
+   
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.chakri{
+    width: 180px; 
+    height: auto;
+    animation: rotate 4s linear infinite;
+}
+
+li{
+    color: orange;
+}
+
+.identity-list {
+    list-style-type: none;
+    margin: 5px;
+    padding: 50px;
+    font-size: 1.5em;
+    margin-bottom: 19px ;
+    font-family: cursive;
+}
+
+.identity-list li {
+    margin-bottom: 20px;
+    color: orange;
+    padding: 20px;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.logo-img{
+    width: 200px;
+    height: auto;
+}
+
+.yoga,.organic,.rain,.tree{
+    color: white;
+    font-size: 25px;
+}
+
+@keyframes color-change {
+    0% { color: orange; }
+    33% { color: white; }
+    66% { color: green; }
+    100% { color: orange; }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+    .language-button {
+        position: absolute;
+        margin-top: -10px;
+        left: 1300px;
+        padding: 10px 20px;
+        background-color: #4CAF50; 
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        height: 35px;
+        width: 60px;
+        z-index: 1;
+    }
+    .language-button:hover {
+        background-color: #45a049;
+    }
+    .hindi{
+        margin-left: -7px;
+    }
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 1.4em;
+        margin-top: 65px;
+        font-family:'Times New Roman', Times, serif;
+        margin-right: 20px;
+    }
+
+    .chakri {
+        width: 65px;
+        margin-left: -5px;
+    }
+
+    .identity-list {
+        font-size: 1.0em;
+        padding: 5px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .logo-img {
+        width: 85px;
+        margin-right: -10px;
+         margin-top: -7px;
+    }
+
+    .color-changing-line {
+        width: 100%;
+        height: 2px;
+        margin: -10px;
+    }
+
+    .yoga,.organic,.rain,.tree{
+        color: white;
+    font-size: 20px;
+    }
+
+    .language-button {
+        margin-top: -15px;
+        left: 250px;
+        background-color: #45a049; 
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 13px;
+        height: 0.8px;
+        width: 0px;
+        z-index: 1;
+    }
+    
+    .hindi{
+        margin-left: -12px;
+        margin-top: -5px;
+        z-index: 1;
+        font-size: 0.9em;
+    }
+    .language-button:hover {
+        background-color: #45a049;
+    }
+}
+
+@media (max-width: 1200px) {
+.hindi{
+    margin-left: -12px;
+    margin-top: px;
+    z-index: 1;
+    font-size: 0.9em;
+}
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community</title>
+    <link rel="stylesheet" href="communityStyles.css">
+</head>
+<body>
+    <div class="content">
+        <button class="language-button" onclick="toggleLanguage()"><div class="hindi">हिन्दी</div> </button>
+        <h1 class="heading" id="heading">Community Development Projects</h1>
+        <hr class="color-changing-line">
+        <div class="chakra">
+            <img src="om.png" alt="om" class="chakri">
+        </div>
+       <a href="home.html" class="logo">
+        <img src="SanatanBoard.jpg" alt="img" class="logo-img">
+       </a>
+  
+        <ul class="identity-list" id="identity-list">
+           <li>Youth start Utilization of Brahma-muhurta (An auspicious time of the day)</li>
+           <li>Youth involvement in farming</li>
+           <li>Cow-based farming is the gateway to creating wealth</li>
+           <li>Local food system</li>
+           <li>Consumer Health</li>
+           <li>Chemical-free farming</li>
+        </ul>
+    </div>
+    <script>
+        let isEnglish = true;
+
+        function toggleLanguage() {
+            if (isEnglish) {
+                changeToHindi();
+            } else {
+                changeToEnglish();
+            }
+            isEnglish = !isEnglish;
+        }
+
+        function changeToHindi() {
+            document.getElementById('heading').innerText = 'सामुदायिक विकास परियोजनाएँ';
+            document.getElementById('identity-list').innerHTML = `
+                <li> युवा ब्रह्म-मुहूर्त (दिन का एक शुभ समय) का उपयोग करना शुरू करते हैं </li>
+                <li> खेती में युवाओं की भागीदारी </li>
+                <li> गाय आधारित खेती धन सृजन का प्रवेश द्वार है। </li>
+                <li> स्थानीय भोजन व्यवस्था</li>
+                <li>   उपभोक्ता स्वास्थ्य </li>
+                <li> रसायन मुक्त खेती </li>
+            `;
+        }
+
+        function changeToEnglish() {
+            document.getElementById('heading').innerText = 'Community Development Projects';
+            document.getElementById('identity-list').innerHTML = `
+        <li>Yo uth start Utilization of Brahma-muhurta (An auspicious time of the day)</li>
+           <li>Youth involvement in farming</li>
+           <li>Cow-based farming is the gateway to creating wealth</li>
+           <li>Local food system</li>
+           <li>Consumer Health</li>
+           <li>Chemical-free farming</li>
+            `;
+        }
+    </script>
+</body>
+</html>

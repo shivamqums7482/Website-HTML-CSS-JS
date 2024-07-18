@@ -1,0 +1,189 @@
+body {
+    background-color: black;
+    color: green;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.heading {
+    font-size: 4em;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    animation: color-change 3s infinite;
+    font-family: cursive;
+}
+
+
+
+.color-changing-line {
+    width: 80%;
+    border: none;
+    height: 4px;
+    background: orange;
+    animation: color-change 3s infinite;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+
+.chakra {
+   
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.chakri{
+    width: 180px; 
+    height: auto;
+    animation: rotate 4s linear infinite;
+}
+
+
+
+.identity-list {
+    list-style-type: none;
+    margin: 5px;
+    padding: 50px;
+    font-size: 1.6em;
+    margin-bottom: 19px ;
+    font-family: cursive;
+    margin-top: 60px;
+}
+
+.identity-list li {
+    margin-bottom: 20px;
+    color: orange;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.logo-img{
+    width: 200px;
+    height: auto;
+}
+@keyframes color-change {
+    0% { color: orange; }
+    33% { color: white; }
+    66% { color: green; }
+    100% { color: orange; }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.language-button {
+    position: absolute;
+    margin-top: -10px;
+    left: 1300px;
+    padding: 10px 20px;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 35px;
+    width: 60px;
+    z-index: 1;
+}
+.language-button:hover {
+    background-color: #45a049;
+}
+.hindi{
+    margin-left: -7px;
+}
+
+
+
+@media (max-width: 1200px) {
+    .heading {
+        font-size: 3em;
+    }
+    .chakra {
+        width: 180px;
+        height: 180px;
+    }
+    .logo-img {
+        width: 180px;
+    }
+    .identity-list {
+        font-size: 1.2em;
+        padding: 20px;
+    }
+    .hindi{
+        margin-left: -12px;
+        margin-top: px;
+        z-index: 1;
+        font-size: 0.9em;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 1.7em;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 50px;
+    }
+    .chakri{
+        width: 65px;
+        margin-left: -125px;
+        margin-top: 0px;
+    }
+    .logo-img {
+        width: 85px;
+        margin-right: -8px;
+        margin-top:0px;
+    }
+    .identity-list {
+        font-size: 1.1em;
+        padding: 15px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .color-changing-line{
+        margin-top: -10px;
+        height: 2px;
+    }
+
+    .language-button{
+    margin-top: -15px;
+    left: 250px;
+    background-color: #45a049; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    height: 0.8px;
+    width: 0px;
+    z-index: 1;
+}
+
+.hindi{
+    margin-left: -12px;
+    margin-top: -5px;
+    z-index: 1;
+    font-size: 0.9em;
+}
+.language-button:hover {
+    background-color: #45a049;
+}
+
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Identity</title>
+    <link rel="stylesheet" href="identityStyles.css">
+</head>
+<body>
+    <div class="content">
+        <button class="language-button" onclick="toggleLanguage()"><div class="hindi">हिन्दी</div></button>
+        <h1 class="heading" id="heading">Our Identity</h1>
+        <hr class="color-changing-line">
+        <div class="chakra">
+            <img src="om.png" alt="om" class="chakri">
+        </div>
+       <a href="home.html" class="logo">
+        <img src="SanatanBoard.jpg" alt="img" class="logo-img">
+       </a>
+  
+        <ul class="identity-list" id="identity-list">
+            <li>Kalpavriksha - A wish-fulfilling divine tree.</li>
+            <li>Kalpavriksha Maharana Organics Trust is working to end poverty, protect the planet, and ensure peace and prosperity for all by 2030.</li>
+            <li>Achieving these goals requires a collective effort from governments, businesses, civil society, and individuals.</li>
+        </ul>
+    </div>
+
+    <script>
+        let isEnglish = true;
+
+        function toggleLanguage() {
+            if (isEnglish) {
+                changeToHindi();
+            } else {
+                changeToEnglish();
+            }
+            isEnglish = !isEnglish;
+        }
+
+        function changeToHindi() {
+            document.getElementById('heading').innerText = 'हमारी पहचान';
+            document.getElementById('identity-list').innerHTML = `
+                <li>कल्पवृक्ष - एक इच्छा पूर्ति करने वाला दिव्य वृक्ष।</li>
+                <li>कल्पवृक्ष महाराणा ऑर्गेनिक्स ट्रस्ट 2030 तक गरीबी समाप्त करने, ग्रह की रक्षा करने और सभी के लिए शांति और समृद्धि सुनिश्चित करने के लिए काम कर रहा है।</li>
+                <li>इन लक्ष्यों को प्राप्त करने के लिए सरकारों, व्यवसायों, नागरिक समाज और व्यक्तियों से सामूहिक प्रयास की आवश्यकता होती है।</li>
+            
+            `;
+        }
+
+        function changeToEnglish() {
+            document.getElementById('heading').innerText = 'Our Identity';
+            document.getElementById('identity-list').innerHTML = `
+                <li>Kalpavriksha - A wish-fulfilling divine tree.</li>
+                <li>Kalpavriksha Maharana Organics Trust is working to end poverty, protect the planet, and ensure peace and prosperity for all by 2030.</li>
+                <li>Achieving these goals requires a collective effort from governments, businesses, civil society, and individuals.</li>
+            `;
+        }
+    </script>
+</body>
+</html>

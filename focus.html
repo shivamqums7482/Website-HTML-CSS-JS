@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Area</title>
+    <link rel="stylesheet" href="focusStyle.css">
+</head>
+<body>
+    <div class="content">
+        <button class="language-button" onclick="toggleLanguage()"><div class="hindi">हिन्दी</div></button>
+        <h1 class="heading" id = "heading">Focus Area</h1>
+        <hr class="color-changing-line">
+        <!-- <div class="chakra"></div> -->
+        <div class="chakra">
+            <img src="om.png" alt="om" class="chakri">
+        </div>
+       <a href="home.html" class="logo">
+        <img src="SanatanBoard.jpg" alt="img" class="logo-img">
+       </a>
+  
+        <ul class="identity-list" id="identity-list">
+            <li>Yoga for all (Good Health & Wellbeing) </li>
+            <li>Cow-based farming </li>
+            <li>Responsible Consumption and Production  </li>
+            <li>Industry, Innovation, and Infrastructure </li>
+            <li>Decent Work and Economic Growth  </li>
+            <li>Clean Water and Sanitation (Rain water harvesting & groundwater recharge)   </li>
+        </ul>
+    </div>
+    <script>
+        let isEnglish = true;
+
+        function toggleLanguage() {
+            if (isEnglish) {
+                changeToHindi();
+            } else {
+                changeToEnglish();
+            }
+            isEnglish = !isEnglish;
+        }
+
+        function changeToHindi() {
+            document.getElementById('heading').innerText = 'ध्यानाकर्षण क्षेत्र';
+            document.getElementById('identity-list').innerHTML = `
+                <li>सभी के लिए योग (अच्छा स्वास्थ्य एवं खुशहाली)</li>
+                <li>गाय आधारित खेती ।</li>
+                <li>जिम्मेदार उपभोग और उत्पादन </li>
+                <li>उद्योग, नवाचार और बुनियादी ढाँचा </li>
+                <li>   सभ्य कार्य और आर्थिक विकास </li>
+                <li>   स्वच्छ जल एवं स्वच्छता (वर्षा जल संचयन एवं भूजल पुनर्भरण) </li>
+            `;
+        }
+
+        function changeToEnglish() {
+            document.getElementById('heading').innerText = 'Focus Area';
+            document.getElementById('identity-list').innerHTML = `
+            <li>Yoga for all (Good Health & Wellbeing) </li>
+            <li>Cow-based farming </li>
+            <li>Responsible Consumption and Production  </li>
+            <li>Industry, Innovation, and Infrastructure </li>
+            <li>Decent Work and Economic Growth  </li>
+            <li>Clean Water and Sanitation (Rain water harvesting & groundwater recharge)   </li>
+            `;
+        }
+    </script>
+</body>
+</html>

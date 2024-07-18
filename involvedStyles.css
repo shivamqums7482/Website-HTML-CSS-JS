@@ -1,0 +1,183 @@
+body {
+    background-color: black;
+    color: green;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.heading {
+    font-size: 4em;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    animation: color-change 3s infinite;
+    font-family: cursive;
+}
+
+.color-changing-line {
+    width: 80%;
+    border: none;
+    height: 3px;
+    background: orange;
+    animation: color-change 3s infinite;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+
+.chakra {
+   
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.chakri{
+    width: 180px; 
+    height: auto;
+    animation: rotate 4s linear infinite;
+}
+
+.scanner{
+    width: 250px;
+    height: 250px;
+    margin-top: 60px;
+}
+
+#donate{
+    font-size: 25px;
+    font-family: cursive;
+}
+
+.identity-list {
+    list-style-type: none;
+    margin: 5px;
+    padding: 50px;
+    font-size: 1.5em;
+    margin-bottom: 19px ;
+}
+
+.identity-list li {
+    margin-bottom: 20px;
+    color: orange;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.logo-img{
+    width: 200px;
+    height: auto;
+}
+
+.scanner{
+        width: 15%;
+        height: 8%;
+}
+
+
+@keyframes color-change {
+    0% { color: orange; }
+    33% { color: white; }
+    66% { color: green; }
+    100% { color: orange; }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* shivam ka code github se */
+/* Media Queries */
+@media (max-width: 1200px) {
+    .heading {
+        font-size: 3em;
+    }
+    .chakra .chakri {
+        width: 150px;
+    }
+    .logo-img {
+        width: 150px;
+    }
+    .scanner {
+        width: 180px;
+        height: 180px;
+    }
+    #donate {
+        font-size: 20px;
+    }
+    .identity-list {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 1.9em;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 50px;
+    }
+    .chakri {
+        width: 65px;
+        margin-top: -1px;
+        margin-left: -5px;
+    }
+    .logo-img {
+        width: 85px;
+        margin-right: -10px;
+        margin-top: -5px;
+    }
+    .scanner {
+        width: 150px;
+        height: 150px;
+    }
+    #donate {
+        font-size: 18px;
+    }
+    .identity-list {
+        font-size: 1em;
+    }
+    .color-changing-line{
+        height:2px;
+        width: 100%;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 1.9em;
+    }
+    .chakra .chakri {
+        width: 65px;
+    }
+    .logo-img {
+        width: 85px;
+    }
+    .scanner {
+        width: 120px;
+        height: 120px;
+    }
+    #donate {
+        font-size: 16px;
+    }
+    .color-changing-line {
+        width: 100%;
+    }
+    .identity-list {
+        font-size: 0.8em;
+    }
+}

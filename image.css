@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container{
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container h1{
+    margin: 20px 100px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    width: 32%;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card img{
+    width: 90%;
+    height: 90%;
+    filter: grayscale(100%);
+    box-shadow: 0 0 20px #333;
+    object-fit: cover;
+}
+
+.card:hover{
+    transform: scale(1.30);
+    transition: 0.5s;
+    filter: drop-shadow(0 0 15px #ffffff);
+}
+
+.card:hover img{
+    filter: grayscale(0%);
+}
+
+.card figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px;
+    width: 100%;
+    height: 20%;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    opacity: 0;
+    border-radius: 0 0 10px 10px;
+    background: linear-gradient(0edg,rgba(0,0,0,0.5) 0%,rgba(255,255,255,0)100%);
+    transition: 0.3s;
+}
+.card:hover figcaption{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.heading {
+    font-size: 5em;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    animation: color-change 3s infinite;
+    font-family: cursive;
+}
+
+
+
+.color-changing-line {
+    width: 90%;
+    border: none;
+    height: 4px;
+    background: orange;
+    animation: color-change 8s infinite;
+    margin-bottom: 20px;
+}
+
+
+.chakra {
+   
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.chakri{
+    width: 180px; 
+    height: auto;
+    animation: rotate 4s linear infinite;
+}
+
+
+
+.identity-list {
+    list-style-type: none;
+    margin: 5px;
+    padding: 50px;
+    font-size: 1.5em;
+    margin-bottom: 19px ;
+}
+
+.identity-list li {
+    margin-bottom: 20px;
+    color: orange;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    right: 17px;
+}
+
+.logo-img{
+    width: 200px; 
+    height: auto;
+}
+@keyframes color-change {
+    0% { color: orange; }
+    33% { color: white; }
+    66% { color: green; }
+    100% { color: orange; }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    background-color: black;
+    color: green;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+} 
+
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .heading {
+        font-size: 2.0em;
+        margin-top:40px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .color-changing-line{
+        margin-top: -40px;
+        height: 2px;
+    }
+    .card {
+        width: 48%;
+        margin-bottom: 10px;
+    }
+    .color-changing-line {
+        width: 100%;
+    }
+    .chakri{
+        width: 65px;
+        margin-left:-5px;
+    }
+    .logo-img {
+        width: 85px;
+        margin-right: -15px;
+    }
+}
+
+
